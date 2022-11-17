@@ -11,7 +11,7 @@ import useAxiosFetch from './hooks/useAxiosFetch'
 import { useStoreActions } from 'easy-peasy'
 
 function App() {
-  const {data} = useAxiosFetch('http://localhost:3500/posts')
+  const {data} = useAxiosFetch('http://localhot:3500/posts')
   const setPosts =  useStoreActions((actions) => actions.setPosts)
 
   useEffect ((() => {
